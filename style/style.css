@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    background-color: #0e1e2b;
+    color:white;
+}
+
+/* Header */
+
+.logo{
+    width:70px;
+    margin: 0 0 0 10px;
+}
+
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding:0px;
+    margin:0 30px ;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    margin:0;
+}
+.container p {
+    font-size: 25px;
+}
+
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding:  0 20px 0 20px;
+}
+
+
+
+.header{
+    padding:15px 0px;
+    
+}
+
+.header .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav a{
+     font-size:20px;
+     opacity:0.7;
+     transition: opacity 0.3s;
+     letter-spacing:1px;
+     font-weight: 600;
+}
+.header__nav a.active{
+    opacity:1;
+}
+
+
+.header__nav a:hover{
+    opacity:0.9;
+    color:rgb(124, 246, 255);
+}
+
+
+.header__list{
+    display: flex;
+    gap:28px;
+}
+/* Welcome */
+
+.welcome{
+    box-sizing: border-box;
+    min-height: 100vh;
+    
+    margin-top: -123px;
+    padding: 240px 0;
+    
+    background-image: url('../images/welcome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+.welcome__text {
+    width:600px;
+    margin: 0 0 0 20px;
+}
+
+.welcome__title{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.welcome__desc{
+    font-size: 18px;
+    opacity:0.8;
+    text-align: justify;
+    margin: 40px 0px;
+}
+
+/* Info */
+
+.info {
+    background-color: #312F30;
+    margin: 60px 0;
+    padding: 40px 0;
+}
+.info__block {
+    text-align: center;
+    
+    
+
+}
+.info__title {
+    font-size: 40px;
+
+}
+.info__desc {
+    opacity: 0.8;
+}
+ .text {
+    font-size: 18px;
+    opacity: 1;
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+    max-width: 1000px;
+    
+}
+
+/* INfo__tj */
+
+.info__tj {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+
+.info__flag-img {
+    height: 150px;
+    padding-top: 20px;
+}
+
+.flag-img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.info__flag-title {
+    padding: 20px 0;
+    transition: ease .3s color;
+}
+
+.info__flag-title:hover{
+    color:rgb(124, 246, 255);
+}
+
+
+
+/* Info nas */
+
+
+.info__nas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:10px;
+
+    text-align: center;
+}
+.info__nas-block {
+    min-width: 300px;
+    background-color:rgb(116, 114, 114) ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    padding: 20px 40px;    
+    margin-top: 20px;
+    transition: ease .3s color;
+}
+
+.info__nas-block:hover{
+    filter: brightness(1.2);
+    color:rgb(124, 246, 255);
+    background-color:rgb(116, 114, 114);
+}
+.nas__title {
+    padding-bottom: 10px;
+}
+
+
+/* Video */
+
+.iframe__video {
+    clip-path: polygon(10% 0, 100% 0, 100% 20%, 100% 86%, 90% 100%, 0 100%, 0% 80%, 0 15%);
+    width: 750px;
+    height: 450px;
+} 
+
+.video .container {
+    text-align: center;
+    padding: 0 0 60px 0;
+}
+
+.video__title {
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.video__video {
+    width: 70%;
+    border-radius: 50px 50px 10px 10px;
+    box-shadow: 2px 2px 6px gray;
+}
+.video__subtitle {
+    
+    font-style: italic;
+    margin: 0 15px;
+}
+
+
+/* ПОГОДА  */
+
+.weather {
+    min-height: 100vh;
+    background-image: url('../images/pogoda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+.weather .container p {
+    font-size: 25px;
+    line-height: 1.3;
+    text-indent: 40px;
+    text-align: justify;
+}
+.weather__text {
+    padding: 50px 0;
+}
+
+.weather__title {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/* Природа */
+
+
+.nature {
+    min-height: 100vh;
+    background-image: url('../images/priroda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.nature .container p {
+    font-size: 25px;
+    line-height: 1.3;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+/* Гостипримство */
+
+.attractions {
+    min-height: 100vh;
+    background-image: url('../images/gost.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.attractions .container p {
+    font-size: 25px;
+    line-height: 1.3;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+/* Кухня */
+
+.kitchen {
+    min-height: 100vh;
+    background-image: url('../images/kuxnya.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.kitchen .container p {
+    font-size: 25px;
+    line-height: 1.3;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+/* Проживание */
+
+.habitation{
+    min-height: 100vh;
+    background-image: url('../images/gost_hayat.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.habitation .container p {
+    font-size: 25px;
+    line-height: 1.3;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+
+/* Развличение и отдых */
+
+.entertainments{
+    min-height: 100vh;
+    background-image: url('../images/ravlicheni.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.entertainments .container p {
+    font-size: 25px;
+    line-height: 1.3;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+
+.footer{
+    padding:15px;
+    height: 50px;
+    
+}
+
+.footer .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a{
+     font-size:20px;
+     opacity:0.7;
+     transition: opacity 0.3s;
+     letter-spacing:1px;
+     font-weight: 600;
+}
+.footer a.active{
+    opacity:1;
+}
+
+
+.footer a:hover{
+    opacity:0.9;
+    color:rgb(124, 246, 255);
+}
+
+
+.footer{
+    display: flex;
+    gap:28px;
+}
+
+
+.footer p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:770px) {
+
+.header__nav a{
+    font-size: 15px;
+}
+.iframe__video {
+    clip-path: polygon(10% 0, 100% 0, 100% 20%, 100% 86%, 90% 100%, 0 100%, 0% 80%, 0 15%);
+    width: 450px;
+    height: 250px;
+} 
+    
+
+
+.video .container {
+    text-align: center;
+    padding: 0 0 60px 0;
+    width: 90%;
+}
+
+.welcome__text {
+    width:90%;
+    margin: 0 0 0 20px;
+}
+
+.welcome__title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container {
+    padding:  0 20px 0 20px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+    .header__nav a{
+        font-size: 10px;
+    }
+    .header__list{
+        display: flex;
+        gap:8px;
+    }
+
+    .info__title {
+        font-size: 25px;
+    }
+
+    .video__title{
+        font-size: 25px;
+    }
+
+    .container h3 {
+        font-size: 25px;
+    }
+    .container {
+        padding:  0 20px 0 20px;
+    }
+
+}
