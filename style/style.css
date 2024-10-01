@@ -504,5 +504,17 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 5px;
 }
 
+.video__subtitle
+    {
+        font-size: clamp(0.5rem, -0.389rem + 4.44vw, 1.5rem);
+    }
+
+    .info__nas-block{
+        font-size: clamp(0.75rem, 0.083rem + 3.33vw, 1.5rem);
+    }
+
+    .info__flag-title{
+        font-size: clamp(0.75rem, 0.083rem + 3.33vw, 1.5rem);
+    }
 
 }
